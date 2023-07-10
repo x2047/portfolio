@@ -7,11 +7,15 @@
 html {
   scroll-behavior: smooth;
 }
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 /* ヘッダー */
@@ -25,6 +29,9 @@ html {
   align-items: center;
   background-color: rgb(228, 228, 81);
   z-index: 999;
+}
+.global-nav h1 {
+    
 }
 .global-nav nav ul {
   display: flex;
@@ -41,24 +48,51 @@ html {
   align-items: center;
   background-color: rgb(255, 250, 198);
 }
-#hero div{
-    margin-top: 100px; /* ヘッダーの分下げる */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#hero div {
+  margin-top: 100px; /* ヘッダーの分下げる */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* About */
-#about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 500px;
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
 }
-.about-container{
-    display: flex;
-    max-width: 700px;
+.about-container {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  max-width: 700px;
 }
-#icon{
-    height: 200px;
+.about-texts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+#icon {
+  height: 250px;
+  border-radius: 50px;
+}
+
+/* Skill */
+#skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+}
+.skill-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  max-width: 700px;
+  background-color: rgb(254, 209, 95);
+  border-radius: 50px;
+}
+.skill-texts {
+  margin: auto;
 }
