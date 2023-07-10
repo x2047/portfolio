@@ -30,9 +30,6 @@ a{
   background-color: rgb(228, 228, 81);
   z-index: 999;
 }
-.global-nav h1 {
-    
-}
 .global-nav nav ul {
   display: flex;
   list-style: none;
