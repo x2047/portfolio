@@ -127,6 +127,11 @@ a {
   align-items: center;
   min-height: 500px;
 }
+#collection-comment1,
+#collection-comment2 {
+  padding-top: 120px;
+  margin-top: -120px;
+}
 .collection-comment {
   display: flex;
   margin-bottom: 30px;

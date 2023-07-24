@@ -1,0 +1,66 @@
+/* 全体 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.title {
+  font-size: 20px;
+}
+
+/* ヘッダー */
+.global-nav {
+  position: fixed;
+  padding: 0 2rem; /* 画面幅が狭い場合に詰まってしまうので */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 204, 0, 0.95);
+  z-index: 999;
+}
+.global-nav nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem; /* 子要素間の隙間 */
+}
+
+/* collection-page */
+#collection-page{
+    padding-top: 6rem;
+}
+
+/* フッダー */
+footer {
+  margin-top: 120px;
+  padding: 50px 10%;
+  height: 400px;
+  background-color: rgb(255, 204, 0);
+}
+footer li {
+  margin: 20px 0;
+}
+.collection-sub {
+  margin-left: 10px;
+}
+.collection-sub li {
+  margin: -10px 0 20px;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+}
