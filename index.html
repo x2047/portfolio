@@ -13,9 +13,9 @@
       <h1><a href="#">Hideto</a></h1>
       <nav>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">作品一覧</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#collection">作品一覧</a></li>
         </ul>
       </nav>
     </header>
@@ -76,7 +76,7 @@
         <h2>作品一覧</h2>
         <p>これまで作成したもの</p>
       </div>
-      <div class="collection-comment">
+      <div id="collection-comment1" class="collection-comment">
         <div class="collection-texts">
           <h3>Mayaを使った動画</h3>
           <p>
@@ -87,7 +87,7 @@
         <img src="img/collection1.png" alt="作品説明1" width="200px" />
       </div>
 
-      <div class="collection-comment">
+      <div id="collection-comment2" class="collection-comment">
         <div class="collection-texts">
           <h3>TOKYO GAME SHOW出展作品</h3>
           <p>
@@ -102,5 +102,22 @@
         <a href="#" class="botan-design">詳しく見る</a>
       </div>
     </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#collection">作品一覧</a>
+          </li>
+          <ul class="collection-sub">
+            <li><a href="#collection-comment1">Mayaを使った動画</a></li>
+            <li><a href="#collection-comment2">TOKYO GAME SHOW出展作品</a></li>
+          </ul>
+        </ul>
+      </nav>
+      <p>© Hideto</p>
+    </footer>
   </body>
 </html>
