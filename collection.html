@@ -6,6 +6,7 @@
     <title>collection</title>
     <!-- <link rel="stylesheet" href="https://x2047.github.io/portfolio/style.css" /> -->
     <link rel="stylesheet" href="style-collection.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="global-nav">
@@ -22,15 +23,50 @@
     <section id="collection-page">
       <div class="title">
         <h2>Mayaを使った動画</h2>
-        <img src="img/collection1.png" alt="作品説明1" width="600px" />
-        <p>自己紹介</p>
+        <img
+          src="img/collection1.png"
+          class="popup"
+          alt="作品説明1"
+          width="600px"
+        />
+        <p>
+          Mayaを使い「魚」や「オブジェクト」「アニメーション」を作成したもの。<br />
+          加えてAdobePremiereProやAdobeAfterEffectsを使い動画編集を行なった。
+        </p>
       </div>
 
       <div class="title">
         <h2>TOKYO GAME SHOW出展作品</h2>
-        <p>自己紹介</p>
+        <img
+          src="img/collection2.jpg"
+          class="popup"
+          alt="作品説明2"
+          width="600px"
+        />
+        <p>
+          大学の有志で集まったメンバーで作成したゲーム。<br />
+          UnityやMayaなどのソフトを使い、東京ゲームショウ2022で出展を行なった。
+        </p>
+      </div>
+
+      <div class="title">
+        <h2>部活動紹介の広告</h2>
+        <img
+          src="img/collection3.jpg"
+          class="popup"
+          alt="作品説明23"
+          width="600px"
+        />
+        <p>
+          大学での部活動を紹介するために作成した広告。<br />
+          普段の部活動の様子を撮影し、画像・動画の編集ソフトを使いチラシや動画を作成。
+        </p>
       </div>
     </section>
+
+    <div id="popupback">
+      <img id="popupimg" src="" />
+    </div>
 
     <footer>
       <nav>
@@ -40,8 +76,14 @@
           <li><a href="index.html#skill">Skill</a></li>
           <li><a href="index.html#collection">作品一覧</a></li>
           <ul class="collection-sub">
-            <li><a href="index.html#collection-comment1">Mayaを使った動画</a></li>
-            <li><a href="index.html#collection-comment2">TOKYO GAME SHOW出展作品</a></li>
+            <li>
+              <a href="index.html#collection-comment1">Mayaを使った動画</a>
+            </li>
+            <li>
+              <a href="index.html#collection-comment2"
+                >TOKYO GAME SHOW出展作品</a
+              >
+            </li>
           </ul>
         </ul>
       </nav>

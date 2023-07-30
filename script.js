@@ -1,6 +1,6 @@
 const popup = document.querySelectorAll(".popup");
 const popupback = document.getElementById("popupback");
-const popupimg = document.getElementById("popupimg")
+const popupimg = document.getElementById("popupimg");
 popup.forEach(function(value){
     value.addEventListener("click",kakudai);
 });
