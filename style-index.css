@@ -20,6 +20,9 @@ a {
 .title {
   font-size: 20px;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* ポップアップ表示関連 */
 #popupback {
@@ -99,12 +102,29 @@ body {
     rotate: -360deg;
   }
 }
+@media (width <= 769px){
+  #hexagon1 {
+    width: 300px;
+    top: 700px;
+    left: -3%;
+  }
+  #hexagon2 {
+    width: 300px;
+    top: 1250px;
+    right:  10%;
+  }
+  #hexagon3 {
+    width: 300px;
+    top: 1800px;
+    left: 5%;
+  }
+}
 
 /* ヘッダー */
 .global-nav {
   position: fixed;
   padding: 0 2rem; /* 画面幅が狭い場合に詰まってしまうので */
-  width: 100%;
+  width: 100vw;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -140,6 +160,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (width <= 769px) {
+  #hero{
+  width: 100%;
+  }
+}
 
 /* About */
 #about {
@@ -169,6 +194,15 @@ body {
   height: 250px;
   border-radius: 50px;
 }
+@media (width <= 769px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+  .about-texts{
+    margin-top: 20px;
+    margin-right: 0;
+  }
+}
 
 /* Skill */
 #skill {
@@ -195,6 +229,14 @@ body {
 }
 .skill-texts h3 {
   font-size: 20px;
+}
+@media (width <= 769px){
+  .skill-container {
+    width: 90vw;
+  }
+  .skill-texts h3 {
+    font-size: 20px;
+  }
 }
 
 /* collection */
@@ -240,6 +282,7 @@ body {
 }
 .botan {
   margin: 20px auto 20px;
+  height: 30px;
   align-items: center;
 }
 .botan-design {
