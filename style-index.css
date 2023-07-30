@@ -86,6 +86,15 @@ body {
   opacity: 0.3;
   animation: rotate_r infinite linear 3s;
 }
+#hexagon4 {
+  position: absolute;
+  width: 400px;
+  top: 2800px;
+  right: 15%;
+  z-index: -5;
+  opacity: 0.3;
+  animation: rotate_l infinite linear 3s;
+}
 @keyframes rotate_r {
   0% {
     rotate: 0deg;
@@ -109,14 +118,19 @@ body {
     left: -3%;
   }
   #hexagon2 {
-    width: 300px;
+    width: 250px;
     top: 1250px;
-    right: 10%;
+    right: 20%;
   }
   #hexagon3 {
     width: 300px;
     top: 1800px;
     left: 5%;
+  }
+  #hexagon4 {
+    width: 200px;
+    top: 3100px;
+    right: 20%;
   }
 }
 
