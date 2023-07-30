@@ -20,11 +20,12 @@ a {
 .title {
   font-size: 20px;
 }
+span {
+  margin: 10px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
 
 /* ポップアップ表示関連 */
-#popup {
-  position: relative;
-}
 #popupback {
   display: none;
   position: fixed;
@@ -34,9 +35,18 @@ a {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
-
 }
-body{
+#popupback_v {
+  display: none;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+body {
   position: relative;
 }
 #popupimg {
@@ -44,18 +54,71 @@ body{
   max-width: 50%;
   border: solid 5px rgb(255, 255, 255);
 }
+#popupimg_v {
+  max-height: 70%;
+  max-width: 50%;
+  border: solid 5px rgb(255, 255, 255);
+}
 .popup {
   cursor: pointer;
 }
-.transparent{
+.popup_v {
+  cursor: pointer;
+}
+.transparent {
   animation: transparent 0.3s;
 }
-@keyframes transparent{
-  0%{
+@keyframes transparent {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
+  }
+}
+
+/* design関係 */
+#hexagon1 {
+  position: absolute;
+  width: 400px;
+  top: 3%;
+  left: 5%;
+  z-index: -5;
+  opacity: 0.3;
+  animation: rotate_r infinite linear 3s;
+}
+#hexagon2 {
+  position: absolute;
+  width: 700px;
+  top: 25%;
+  right: 5%;
+  z-index: -5;
+  opacity: 0.3;
+  animation: rotate_l infinite linear 3s;
+}
+#hexagon3 {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 20%;
+  z-index: -5;
+  opacity: 0.3;
+  animation: rotate_r infinite linear 3s;
+}
+@keyframes rotate_r {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rotate_l {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
   }
 }
 
@@ -78,8 +141,33 @@ body{
 }
 
 /* collection-page */
-#collection-page{
-    padding-top: 6rem;
+#collection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+}
+#collection-page h1 {
+  font-size: 2.5rem;
+}
+#collection-page h2 {
+  border-bottom: 4px solid rgb(0, 0, 0);
+}
+#collection-page div {
+  margin: 20px;
+  padding: 30px;
+  max-width: 600px;
+  background-color: rgb(254, 209, 95);
+  border-radius: 10px;
+}
+#collection-page img {
+  margin: 10px;
+  border-radius: 10px;
+}
+#collection-page #img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* フッダー */

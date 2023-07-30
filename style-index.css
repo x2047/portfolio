@@ -22,9 +22,6 @@ a {
 }
 
 /* ポップアップ表示関連 */
-#popup {
-  position: relative;
-}
 #popupback {
   display: none;
   position: fixed;
@@ -35,7 +32,7 @@ a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6);
 }
-body{
+body {
   position: relative;
 }
 #popupimg {
@@ -46,63 +43,62 @@ body{
 .popup {
   cursor: pointer;
 }
-.transparent{
+.transparent {
   animation: transparent 0.3s;
 }
-@keyframes transparent{
-  0%{
+@keyframes transparent {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
 /* design関係 */
-#hexagon1{
+#hexagon1 {
   position: absolute;
-  width: 300px;
+  width: 400px;
   top: 800px;
-  left: 5%;
+  left: 10%;
   z-index: -5;
   opacity: 0.3;
   animation: rotate_r infinite linear 3s;
 }
-#hexagon2{
+#hexagon2 {
   position: absolute;
-  width: 300px;
+  width: 700px;
   top: 1300px;
   right: 5%;
   z-index: -5;
   opacity: 0.3;
   animation: rotate_l infinite linear 3s;
 }
-#hexagon3{
+#hexagon3 {
   position: absolute;
-  width: 300px;
-  top: 1800px;
-  left: 25%;
+  width: 500px;
+  top: 2100px;
+  left: 20%;
   z-index: -5;
   opacity: 0.3;
   animation: rotate_r infinite linear 3s;
 }
-@keyframes rotate_r{
-  0%{
+@keyframes rotate_r {
+  0% {
     rotate: 0deg;
   }
-  100%{
+  100% {
     rotate: 360deg;
   }
 }
-@keyframes rotate_l{
-  0%{
+@keyframes rotate_l {
+  0% {
     rotate: 0deg;
   }
-  100%{
+  100% {
     rotate: -360deg;
   }
 }
-
 
 /* ヘッダー */
 .global-nav {
@@ -216,7 +212,7 @@ body{
   padding-top: 120px;
   margin-top: -120px;
 }
-#collection3{
+#collection3 {
   margin-right: 3%;
 }
 .collection-comment {

@@ -9,6 +9,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div id="design">
+      <img src="img/hexagon1.png" id="hexagon1" alt="hexagon" />
+      <img src="img/hexagon2.png" id="hexagon2" alt="hexagon" />
+      <img src="img/hexagon3.png" id="hexagon3" alt="hexagon" />
+    </div>
+
     <header class="global-nav">
       <h1><a href="index.html">Hideto</a></h1>
       <nav>
@@ -21,17 +27,22 @@
     </header>
 
     <section id="collection-page">
+      <h1>作品一覧</h1>
+      <p>これまで作成したもの</p>
       <div class="title">
         <h2>Mayaを使った動画</h2>
         <img
           src="img/collection1.png"
           class="popup"
           alt="作品説明1"
-          width="600px"
+          width="400px"
         />
+        <span>制作時間 : 約30時間</span>
         <p>
-          Mayaを使い「魚」や「オブジェクト」「アニメーション」を作成したもの。<br />
-          加えてAdobePremiereProやAdobeAfterEffectsを使い動画編集を行なった。
+          Mayaを使い「魚」や「オブジェクト」、「アニメーション」を作成したもの。<br />
+          大学で学んだ技術を活かし、1から作成。オブジェクトの配置やカメラワークは何度も試行錯誤を行い、完成度をできるだけ高いものに仕上げた。<br />
+          加えて「AdobePremierePro」や「AdobeAfterEffects」を使い動画編集を行なった。
+          動画のカットはもちろんのこと、トランジションなども活用し、つまらないものにならないように仕上げた。
         </p>
       </div>
 
@@ -41,31 +52,52 @@
           src="img/collection2.jpg"
           class="popup"
           alt="作品説明2"
-          width="600px"
+          width="400px"
         />
+        <span>制作時間 : 約5ヶ月</span>
         <p>
           大学の有志で集まったメンバーで作成したゲーム。<br />
           UnityやMayaなどのソフトを使い、東京ゲームショウ2022で出展を行なった。
+          「おもしろいインタフェース」をテーマに、提灯を使ったゲームを作った。
+          ゲームにはレーザーセンサやM5Stackなどの機械を使った。<br />
+          私は主にM5Stackのプログラミングや道具の作成を担当。<br />
+          <small>※個人情報により一部隠しています</small>
         </p>
       </div>
 
       <div class="title">
         <h2>部活動紹介の広告</h2>
-        <img
-          src="img/collection3.jpg"
-          class="popup"
-          alt="作品説明23"
-          width="600px"
-        />
+        <div id="img">
+          <img
+            src="img/collection3.jpg"
+            class="popup"
+            alt="作品説明23"
+            width="60%"
+          />
+          <video
+            src="collection4.mp4"
+            class="popup_v"
+            width="60%"
+            height="100%"
+            autoplay
+            loop
+          ></video>
+        </div>
+        <span>制作時間 : 約48時間(素材の撮影含め)</span>
         <p>
           大学での部活動を紹介するために作成した広告。<br />
-          普段の部活動の様子を撮影し、画像・動画の編集ソフトを使いチラシや動画を作成。
+          「部活動のイベント」や「普段の練習風景」、「どこで練習をしているのか」などの情報が新入生に正確に伝わるように心がけ作成。<br />
+          普段の部活動の様子を撮影し、画像・動画の編集ソフトを使いチラシや動画を作成。<br />
+          <small>※個人情報により一部隠しています</small>
         </p>
       </div>
     </section>
 
     <div id="popupback">
       <img id="popupimg" src="" />
+    </div>
+    <div id="popupback_v">
+      <video id="popupimg_v" autoplay loop src=""></video>
     </div>
 
     <footer>
