@@ -125,6 +125,19 @@ body {
     rotate: -360deg;
   }
 }
+@media (width <= 769px) {
+  #hexagon1 {
+    width: 300px;
+  }
+  #hexagon2 {
+    width: 200px;
+    right: 20%;
+  }
+  #hexagon3 {
+    width: 300px;
+    left: 0;
+  }
+}
 
 /* ヘッダー */
 .global-nav {
@@ -172,6 +185,24 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (width <= 769px) {
+  #collection-page div {
+    margin: 20px;
+    padding: 30px;
+    max-width: 90vw;
+  }
+  #collection-page img {
+    width: 300px;
+  }
+  #collection-page #img {
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+  .popup_v {
+    width: 300px;
+  }
 }
 
 /* フッダー */

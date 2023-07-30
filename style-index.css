@@ -102,7 +102,7 @@ body {
     rotate: -360deg;
   }
 }
-@media (width <= 769px){
+@media (width <= 769px) {
   #hexagon1 {
     width: 300px;
     top: 700px;
@@ -111,7 +111,7 @@ body {
   #hexagon2 {
     width: 300px;
     top: 1250px;
-    right:  10%;
+    right: 10%;
   }
   #hexagon3 {
     width: 300px;
@@ -161,8 +161,8 @@ body {
   align-items: center;
 }
 @media (width <= 769px) {
-  #hero{
-  width: 100%;
+  #hero {
+    width: 100%;
   }
 }
 
@@ -198,7 +198,7 @@ body {
   .about-container {
     flex-direction: column-reverse;
   }
-  .about-texts{
+  .about-texts {
     margin-top: 20px;
     margin-right: 0;
   }
@@ -230,12 +230,16 @@ body {
 .skill-texts h3 {
   font-size: 20px;
 }
-@media (width <= 769px){
+@media (width <= 769px) {
   .skill-container {
     width: 90vw;
   }
   .skill-texts h3 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .skill-texts li {
+    margin-left: 20px;
+    font-size: 14px;
   }
 }
 
@@ -296,6 +300,19 @@ body {
 .botan-design:hover {
   color: rgb(0, 50, 255);
   background-color: rgb(255, 204, 0);
+}
+@media (width <= 769px) {
+  .collection-comment {
+    width: 90vw;
+    height: 350px;
+    flex-direction: column-reverse;
+  }
+  .collection-comment3 {
+    height: 400px;
+  }
+  .popup {
+    margin-bottom: 10px;
+  }
 }
 
 /* フッダー */
