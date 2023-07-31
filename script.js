@@ -31,4 +31,3 @@ function modosu_v() {
   popupback_v.style.display = "none";
   popupimg_v.classList.remove("transparent");
 }
-
